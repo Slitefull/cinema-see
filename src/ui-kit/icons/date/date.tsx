@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { IDateIconProps } from "@ui-kit/icons/date/types";
+import { IDateIconProps } from "@/ui-kit/icons/date/types";
 
 
 const DateIcon: FC<IDateIconProps> = ({ height, width }): JSX.Element => {

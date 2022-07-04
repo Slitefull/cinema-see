@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { IMicrophoneIconProps } from "@ui-kit/icons/microphone/types";
+import { IMicrophoneIconProps } from "@/ui-kit/icons/microphone/types";
 
 
 const MicrophoneIcon: FC<IMicrophoneIconProps> = (

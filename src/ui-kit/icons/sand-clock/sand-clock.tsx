@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { ISandClockIconProps } from "@ui-kit/icons/sand-clock/types";
+import { ISandClockIconProps } from "@/ui-kit/icons/sand-clock/types";
 
 
 const SandClockIcon: FC<ISandClockIconProps> = ({ width, height }): JSX.Element => {
