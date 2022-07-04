@@ -1,10 +1,3 @@
-import { GenresMusic } from "../../constants/genres";
-
-
-export interface ICatalogStore {
-  catalog: ICatalogElement[];
-}
-
 export interface ICatalogElement {
   id: string;
   album: string;
@@ -13,7 +6,7 @@ export interface ICatalogElement {
   name: string;
   year: number;
   duration: string;
-  genre: GenresMusic;
+  genre: string;
   videoURL: string;
   lyrics: string;
 }
