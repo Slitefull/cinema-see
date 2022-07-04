@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2412fb80-1040-422d-95c9-c306c7ef84fd" name="Changes" comment="ref: files">
-      <change afterPath="$PROJECT_DIR$/craco.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/login/login.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/register/register.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-overrides.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/music-card/music-card.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/music-card/music-card.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui-kit/icons/date/date.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui-kit/icons/date/date.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui-kit/icons/microphone/microphone.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui-kit/icons/microphone/microphone.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui-kit/icons/sand-clock/sand-clock.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui-kit/icons/sand-clock/sand-clock.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.paths.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.paths.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/song/song.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/movie/movie.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/song/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/movie/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/song/types/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/movie/types/styled.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1656950680168</updated>
       <workItem from="1656950682710" duration="32000" />
-      <workItem from="1656958045128" duration="1766000" />
+      <workItem from="1656958045128" duration="3547000" />
     </task>
     <task id="LOCAL-00001" summary="ref: files">
       <created>1656958205784</created>
@@ -79,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656958297767</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ref: files">
+      <created>1656960041477</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656960041477</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

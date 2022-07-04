@@ -1,9 +1,12 @@
-import React, { FC } from "react";
+import React, { FC, lazy } from "react";
 import { BrowserRouter, Route, Routes, } from "react-router-dom";
-import CatalogPage from "../pages/catalog/catalog";
-import SongPage from "../pages/song/song";
-import Header from "../components/header/header.component";
+import Header from "@/components/header/header.component";
 
+
+const LazyLoginRouter = lazy(() => import("@/pages/login/login"));
+const LazyRegisterRouter = lazy(() => import("@/pages/register/register"));
+const LazyCatalogRouter = lazy(() => import("@/pages/catalog/catalog"));
+const LazyMovieRouter = lazy(() => import("@/pages/movie/movie"));
 
 const App: FC = (): JSX.Element => {
   return (
@@ -11,8 +14,10 @@ const App: FC = (): JSX.Element => {
       <Header/>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<CatalogPage/>}/>
-          <Route path="/song:id" element={<SongPage/>}/>
+          <Route path="/" element={<LazyCatalogRouter/>}/>
+          <Route path="/sign-in" element={<LazyLoginRouter/>}/>
+          <Route path="/sign-up" element={<LazyRegisterRouter/>}/>
+          <Route path="/movie:id" element={<LazyMovieRouter/>}/>
         </Routes>
       </BrowserRouter>
     </>

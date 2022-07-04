@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ISongThumbnailProps } from "@/pages/song/types/styled";
+import { ISongThumbnailProps } from "@/pages/movie/types/styled";
 
 
 export const ThumbnailWrapper = styled.div` && {
