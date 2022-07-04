@@ -1,6 +1,3 @@
-import { GenresMusic } from "@constants/genres";
-
-//TODO OMIT
 export interface IMusicCardProps {
   id: string;
   album: string;
@@ -9,5 +6,5 @@ export interface IMusicCardProps {
   name: string;
   year: number;
   duration: string;
-  genre: GenresMusic;
+  genre: string;
 }

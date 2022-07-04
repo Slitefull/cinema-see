@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import PageWrapper from "../../ui-kit/components/page-wrapper/page-wrapper";
+import PageWrapper from "../../components/page-wrapper/page-wrapper";
 import { useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import MicrophoneIcon from "../../ui-kit/icons/microphone/microphone";

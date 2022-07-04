@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { useQuery } from '@apollo/client';
-import { MusicCard } from "../../ui-kit/components/music-card/music-card.component";
-import PageWrapper from "../../ui-kit/components/page-wrapper/page-wrapper";
+import { MusicCard } from "../../components/music-card/music-card.component";
+import PageWrapper from "../../components/page-wrapper/page-wrapper";
 import { songsQuery } from "../../queries/catalog/catalog";
 
 import { CatalogWrapper } from "./styles";

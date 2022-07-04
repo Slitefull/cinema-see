@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { IMusicCardThumbnailProps } from "@ui-kit/components/music-card/types/styled.types";
+import { IMusicCardThumbnailProps } from "@/components/music-card/types/styled.types";
 
 
 export const MusicCardWrapper = styled.div` && {

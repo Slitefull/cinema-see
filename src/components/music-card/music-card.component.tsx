@@ -1,9 +1,9 @@
 import React, { FC, memo, useCallback } from 'react';
 import { useNavigate } from "react-router-dom";
-import DateIcon from "../../icons/date/date";
-import MicrophoneIcon from "../../icons/microphone/microphone";
-import SandClockIcon from "../../icons/sand-clock/sand-clock";
-import PlaylistIcon from "../../icons/playlist/playlist";
+import DateIcon from "@ui-kit/icons/date/date";
+import MicrophoneIcon from "@ui-kit/icons/microphone/microphone";
+import SandClockIcon from "@ui-kit/icons/sand-clock/sand-clock";
+import PlaylistIcon from "@ui-kit/icons/playlist/playlist";
 
 import {
   AdditionalInfoWrapper,

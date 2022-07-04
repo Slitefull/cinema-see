@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Provider } from 'react-redux';
-import { store } from './store';
 import reportWebVitals from './reportWebVitals';
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 import App from './app/app';
@@ -19,14 +17,12 @@ const root = ReactDOM.createRoot(
 );
 
 root.render(
-  <Provider store={store}>
-    <React.StrictMode>
-      <ApolloProvider client={client}>
-        <GlobalCSS/>
-        <App/>
-      </ApolloProvider>
-    </React.StrictMode>
-  </Provider>
+  <React.StrictMode>
+    <ApolloProvider client={client}>
+      <GlobalCSS/>
+      <App/>
+    </ApolloProvider>
+  </React.StrictMode>
 );
 
 reportWebVitals();
