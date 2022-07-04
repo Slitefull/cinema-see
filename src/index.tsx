@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 import App from './app/app';
 
 import GlobalCSS from './global.css';
+import PlanetLoader from "@/ui-kit/components/loaders/planet";
 
 
 const client = new ApolloClient({
@@ -18,10 +19,12 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <ApolloProvider client={client}>
-      <GlobalCSS/>
-      <App/>
-    </ApolloProvider>
+    <Suspense fallback={<PlanetLoader/>}>
+      <ApolloProvider client={client}>
+        <GlobalCSS/>
+        <App/>
+      </ApolloProvider>
+    </Suspense>
   </React.StrictMode>
 );
 

@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2412fb80-1040-422d-95c9-c306c7ef84fd" name="Changes" comment="ref: files">
-      <change afterPath="$PROJECT_DIR$/src/pages/login/login.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/register/register.tsx" afterDir="false" />
+    <list default="true" id="2412fb80-1040-422d-95c9-c306c7ef84fd" name="Changes" comment="ref: lazy routes">
+      <change afterPath="$PROJECT_DIR$/src/constants/localStorage.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/login/styled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui-kit/components/buttons/custom-button/custom-button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui-kit/components/buttons/custom-button/styled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui-kit/components/buttons/custom-button/types/custom-button.types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui-kit/components/forms/text-input/forms-text-input.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui-kit/components/loaders/planet.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui-kit/components/loaders/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui-kit/components/sceletons/cards.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui-kit/components/sceletons/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui-kit/components/text-input/styled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui-kit/components/text-input/text-input.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui-kit/helpers/validators.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/getIsAuth.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/song/song.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/movie/movie.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/song/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/movie/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/song/types/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/movie/types/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/catalog/catalog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/catalog/catalog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-kit/icons/playlist/playlist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui-kit/icons/playlist/playlist.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +63,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vipti\Desktop\cinema-see\src\ui-kit\components" />
+      <recent name="C:\Users\vipti\Desktop\cinema-see\src\ui-kit\helpers" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\vipti\Desktop\cinema-see\src\components" />
     </key>
@@ -59,7 +80,8 @@
       <option name="presentableId" value="Default" />
       <updated>1656950680168</updated>
       <workItem from="1656950682710" duration="32000" />
-      <workItem from="1656958045128" duration="3547000" />
+      <workItem from="1656958045128" duration="12396000" />
+      <workItem from="1656971377153" duration="5207000" />
     </task>
     <task id="LOCAL-00001" summary="ref: files">
       <created>1656958205784</created>
@@ -82,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656960041477</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ref: lazy routes">
+      <created>1656961646016</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656961646016</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,7 +130,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ref: files" />
-    <option name="LAST_COMMIT_MESSAGE" value="ref: files" />
+    <MESSAGE value="ref: lazy routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="ref: lazy routes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

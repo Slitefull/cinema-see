@@ -13,7 +13,7 @@ const PlaylistIcon: FC<IPlaylistIconProps> = ({ width, height }): JSX.Element =>
     >
       <title>queue_music</title>
       <desc>Created with Sketch.</desc>
-      <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g id="Icons" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <g id="Rounded" transform="translate(-170.000000, -999.000000)">
           <g id="AV" transform="translate(100.000000, 852.000000)">
             <g id="-Round-/-AV-/-queue_music" transform="translate(68.000000, 142.000000)">
