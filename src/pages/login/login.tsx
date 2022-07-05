@@ -1,4 +1,4 @@
-import React, { FC, useCallback } from 'react';
+import React, { FC, useCallback, useState } from 'react';
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
@@ -18,6 +18,7 @@ interface LoginValues {
 
 const Login: FC = (): JSX.Element => {
   const navigate = useNavigate();
+  const [isAuth, setIsAuth] = useState(false);
 
   const validationSchema = yup.object().shape({
     email: email(),
@@ -40,30 +41,31 @@ const Login: FC = (): JSX.Element => {
 
   const onSubmitHandler = useCallback(() => {
     localStorage.setItem(LS_AUTH_KEY, 'true');
-    navigate(ROOT_ROUTE)
+    navigate(ROOT_ROUTE);
+    setIsAuth(true);
   }, [navigate])
 
   return (
-    <LoginForm onSubmit={handleSubmit(onSubmitHandler)}>
-      <FormsTextInput
-        name="email"
-        control={control}
-        placeholder={"email"}
-        error={errors.email?.message}
-      />
-      <FormsTextInput
-        name="password"
-        control={control}
-        placeholder={"password"}
-        error={errors.password?.message}
-      />
-      <CustomButton
-        type="submit"
-        disabled={isSubmitting}
-      >
-        Login
-      </CustomButton>
-    </LoginForm>
+      <LoginForm onSubmit={handleSubmit(onSubmitHandler)}>
+        <FormsTextInput
+          name="email"
+          control={control}
+          placeholder={"email"}
+          error={errors.email?.message}
+        />
+        <FormsTextInput
+          name="password"
+          control={control}
+          placeholder={"password"}
+          error={errors.password?.message}
+        />
+        <CustomButton
+          type="submit"
+          disabled={isSubmitting}
+        >
+          Login
+        </CustomButton>
+      </LoginForm>
   );
 };
 

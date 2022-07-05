@@ -1,12 +1,12 @@
 import React, { FC } from "react";
 import { useQuery } from '@apollo/client';
 import { MusicCard } from "@/components/music-card/music-card.component";
-import PageWrapper from "@/components/page-wrapper/page-wrapper";
 import { songsQuery } from "@/queries/catalog/catalog";
+import CardsSkeleton from "@/ui-kit/components/sceletons/cards";
+import PageWrapper from "@/components/page-wrapper/page-wrapper";
 
 import { CatalogWrapper } from "./styles";
 import { ISongsQueryResponseModel } from "@/queries/catalog/types";
-import CardsSkeleton from "@/ui-kit/components/sceletons/cards";
 
 
 const CatalogPage: FC = (): JSX.Element => {

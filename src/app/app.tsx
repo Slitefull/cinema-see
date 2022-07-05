@@ -1,6 +1,5 @@
 import React, { FC, lazy } from "react";
-import { BrowserRouter, Route, Routes, } from "react-router-dom";
-import { getIsAuth } from "@/utils/getIsAuth";
+import { BrowserRouter, Navigate, Route, Routes, } from "react-router-dom";
 import { LOGIN_ROUTE, MOVIE_ROUTE, REGISTER_ROUTE, ROOT_ROUTE } from "@/constants/routes";
 import Header from "@/components/header/header.component";
 
@@ -11,17 +10,23 @@ const LazyCatalogRouter = lazy(() => import("@/pages/catalog/catalog"));
 const LazyMovieRouter = lazy(() => import("@/pages/movie/movie"));
 
 const App: FC = (): JSX.Element => {
-  const isAuth = getIsAuth();
+  const isAuth = true;
 
   return (
     <>
       {isAuth && <Header/>}
       <BrowserRouter>
         <Routes>
-          <Route path={ROOT_ROUTE} element={<LazyCatalogRouter/>}/>
-          <Route path={LOGIN_ROUTE} element={<LazyLoginRouter/>}/>
-          <Route path={REGISTER_ROUTE} element={<LazyRegisterRouter/>}/>
-          <Route path={MOVIE_ROUTE} element={<LazyMovieRouter/>}/>
+          <Route path={ROOT_ROUTE} element={isAuth ? <LazyCatalogRouter/> : <Navigate to={LOGIN_ROUTE}/>}/>
+          <Route path={LOGIN_ROUTE} element={isAuth ? <Navigate to={ROOT_ROUTE}/> : <LazyLoginRouter/>}/>
+          <Route path={REGISTER_ROUTE} element={isAuth ? <Navigate to={ROOT_ROUTE}/> : <LazyRegisterRouter/>}/>
+          <Route path={MOVIE_ROUTE} element={isAuth ? <LazyMovieRouter/> : <Navigate to={LOGIN_ROUTE}/>}/>
+          <Route path="*" element={
+            <main>
+              <p>404</p>
+            </main>
+          }
+          />
         </Routes>
       </BrowserRouter>
     </>
@@ -29,3 +34,5 @@ const App: FC = (): JSX.Element => {
 }
 
 export default App;
+
+//TODO Add 404 page

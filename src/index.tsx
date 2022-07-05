@@ -2,10 +2,10 @@ import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
+import PlanetLoader from "@/ui-kit/components/loaders/planet";
 import App from './app/app';
 
 import GlobalCSS from './global.css';
-import PlanetLoader from "@/ui-kit/components/loaders/planet";
 
 
 const client = new ApolloClient({
