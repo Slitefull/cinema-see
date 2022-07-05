@@ -35,7 +35,7 @@ export const limitedString = (
   }
 
   if (required) {
-    string = string.required(("ui-kit.required_field"));
+    string = string.required(("field is required"));
   }
 
   return string;
@@ -45,7 +45,7 @@ export const phone = (length: number, required = false) =>
   required
     ? yup
       .string()
-      .required(("ui-kit.required_field"))
+      .required(("field is required"))
       .matches(
         /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g,
         "ui-kit.phone-should-be-numeric"
@@ -65,14 +65,14 @@ export const checkedCheckbox = () => yup.boolean().oneOf([true], ("ui-kit.accept
 export const email = (required = false) => {
   let email = yup
     .string()
-    .email("ui-kit.not_valid_email")
+    .email("not valid email")
     .max(
       EMAIL_MAX_LENGTH,
-      `ui-kit.email_max_length ${EMAIL_MAX_LENGTH}`
+      `max length is ${EMAIL_MAX_LENGTH}`
     );
 
   if (required) {
-    email = email.required("ui-kit.required_field");
+    email = email.required("field is required");
   }
 
   return email;
@@ -81,10 +81,10 @@ export const email = (required = false) => {
 export const password = () =>
   yup
     .string()
-    .required("ui-kit.required_field")
+    .required("field is required")
     .min(
       PASSWORD_MIN_LENGTH,
-      `ui-kit.password_min_length ${PASSWORD_MIN_LENGTH}`
+      `min length is ${PASSWORD_MIN_LENGTH}`
     )
     .matches(
       /^(?=.*[\d])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*])[\w!@#$%^&*]{8,}$/gi,
@@ -94,5 +94,5 @@ export const password = () =>
 export const confirmPassword = (rePasswordRef: string) =>
   yup
     .string()
-    .required("ui-kit.required_field")
+    .required("field is required")
     .oneOf([yup.ref(rePasswordRef)], ' ');

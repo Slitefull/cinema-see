@@ -1,4 +1,4 @@
-import React, { FC, useCallback, useState } from 'react';
+import React, { FC, useCallback } from 'react';
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
@@ -10,15 +10,16 @@ import { useNavigate } from "react-router-dom";
 import { ROOT_ROUTE } from "@/constants/routes";
 import CustomButton from "@/ui-kit/components/buttons/custom-button/custom-button";
 
+import { LoginProps } from "@/pages/login/types/login";
+
 
 interface LoginValues {
   email: string;
   password: string;
 }
 
-const Login: FC = (): JSX.Element => {
+const Login: FC<LoginProps> = ({ setIsAuth }): JSX.Element => {
   const navigate = useNavigate();
-  const [isAuth, setIsAuth] = useState(false);
 
   const validationSchema = yup.object().shape({
     email: email(),
@@ -41,31 +42,31 @@ const Login: FC = (): JSX.Element => {
 
   const onSubmitHandler = useCallback(() => {
     localStorage.setItem(LS_AUTH_KEY, 'true');
-    navigate(ROOT_ROUTE);
     setIsAuth(true);
-  }, [navigate])
+    navigate(ROOT_ROUTE);
+  }, [navigate, setIsAuth])
 
   return (
-      <LoginForm onSubmit={handleSubmit(onSubmitHandler)}>
-        <FormsTextInput
-          name="email"
-          control={control}
-          placeholder={"email"}
-          error={errors.email?.message}
-        />
-        <FormsTextInput
-          name="password"
-          control={control}
-          placeholder={"password"}
-          error={errors.password?.message}
-        />
-        <CustomButton
-          type="submit"
-          disabled={isSubmitting}
-        >
-          Login
-        </CustomButton>
-      </LoginForm>
+    <LoginForm onSubmit={handleSubmit(onSubmitHandler)}>
+      <FormsTextInput
+        name="email"
+        control={control}
+        placeholder={"email"}
+        error={errors.email?.message}
+      />
+      <FormsTextInput
+        name="password"
+        control={control}
+        placeholder={"password"}
+        error={errors.password?.message}
+      />
+      <CustomButton
+        type="submit"
+        disabled={isSubmitting}
+      >
+        Login
+      </CustomButton>
+    </LoginForm>
   );
 };
 
