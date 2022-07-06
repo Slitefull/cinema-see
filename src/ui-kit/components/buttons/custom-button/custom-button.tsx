@@ -8,13 +8,15 @@ const CustomButton: FC<CustomButtonProps> = (
   {
     disabled,
     children,
-    type
+    type,
+    onClick
   }
 ): JSX.Element => {
   return (
     <StyledCustomButton
       type={type}
       disabled={disabled}
+      onClick={onClick}
     >
       {children}
     </StyledCustomButton>

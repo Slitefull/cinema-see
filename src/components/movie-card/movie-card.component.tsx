@@ -5,6 +5,8 @@ import DateIcon from "@/ui-kit/icons/date/date";
 import UserIcon from "@/ui-kit/icons/user/user";
 import SandClockIcon from "@/ui-kit/icons/sand-clock/sand-clock";
 import MovieIcon from "@/ui-kit/icons/movie/movie";
+import StarIcon from "@/ui-kit/icons/star/star";
+import { GOLD } from "@/ui-kit/constants/colors";
 
 import { IMovieCardProps } from './types/movie-card.types';
 import {
@@ -19,8 +21,6 @@ import {
   MovieCardWrapper,
   MovieDuration
 } from './styled';
-import StarIcon from "@/ui-kit/icons/star/star";
-import { GOLD } from "@/ui-kit/constants/colors";
 
 
 export const MovieCard: FC<IMovieCardProps> = memo((

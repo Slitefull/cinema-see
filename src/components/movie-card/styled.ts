@@ -4,15 +4,17 @@ import { FANDANGO_PINK, WHITE } from "@/ui-kit/constants/colors";
 
 
 export const MovieCardWrapper = styled.div<{ theme: DefaultTheme }>` && {
-  width: auto;
   height: auto;
-  min-width: 280px;
+  width: 280px;
   max-height: 500px;
   border-radius: 10px;
   background: ${({ theme }) => theme.colors.movieCard.body};
   transition: 0.2s;
   position: relative;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   :hover {
     transform: translateY(-10px);
@@ -47,7 +49,7 @@ export const MainInfoWrapper = styled.div<{ theme: DefaultTheme }>` && {
   flex-direction: column;
   padding: 15px 0;
   gap: 15px 0;
-  border: 2px solid ${({ theme }) => theme.colors.movieCard.border};
+  border-bottom: 2px solid ${({ theme }) => theme.colors.movieCard.border};
 }`;
 
 export const AdditionalInfoWrapper = styled.div` && {
@@ -74,9 +76,11 @@ export const MovieCardDate = styled.p<{ theme: DefaultTheme }>` && {
 
 export const MovieCardTitle = styled.p<{ theme: DefaultTheme }>` && {
   font-size: 18px;
-  line-height: 1;
+  line-height: 1.25;
   text-align: center;
   color: ${({ theme }) => theme.colors.movieCard.text};
+  word-wrap: break-word;
+  padding: 0 20px;
 }`;
 
 export const AuthorTitle = styled.p<{ theme: DefaultTheme }>` && {
