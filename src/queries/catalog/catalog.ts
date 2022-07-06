@@ -1,9 +1,9 @@
 import { gql } from "@apollo/client";
 
 
-export const songsQuery = gql`
+export const MOVIES_QUERY = gql`
     query Catalog {
-        songs {
+        movies {
             id
             album
             thumbnail
@@ -18,9 +18,9 @@ export const songsQuery = gql`
     }
 `;
 
-export const songByIdQuery = gql`
+export const MOVIE_BY_ID_QUERY = gql`
     query Catalog($id: ID!) {
-        song(id: $id) {
+        movie(id: $id) {
             id
             album
             thumbnail

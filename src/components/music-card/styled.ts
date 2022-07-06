@@ -1,9 +1,8 @@
-import styled from 'styled-components';
+import styled, { DefaultTheme } from 'styled-components';
 import { IMusicCardThumbnailProps } from "@/components/music-card/types/styled.types";
-import { Theme } from "@/themes/types";
 
 
-export const MusicCardWrapper = styled.div<{ theme: Theme }>` && {
+export const MusicCardWrapper = styled.div<{ theme: DefaultTheme }>` && {
   width: auto;
   height: auto;
   min-width: 280px;
@@ -38,7 +37,7 @@ export const MusicCardAlbum = styled.span` && {
   transform: translateY(-12px);
 }`
 
-export const MainInfoWrapper = styled.div<{ theme: Theme }>` && {
+export const MainInfoWrapper = styled.div<{ theme: DefaultTheme }>` && {
   display: flex;
   flex-direction: column;
   padding: 15px 0;
@@ -55,7 +54,7 @@ export const AdditionalInfoWrapper = styled.div` && {
   justify-content: space-between;
 }`;
 
-export const MusicCardDate = styled.p<{ theme: Theme }>` && {
+export const MusicCardDate = styled.p<{ theme: DefaultTheme }>` && {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -68,7 +67,7 @@ export const MusicCardDate = styled.p<{ theme: Theme }>` && {
   text-align: center;
 }`;
 
-export const MusicCardTitle = styled.p<{ theme: Theme }>` && {
+export const MusicCardTitle = styled.p<{ theme: DefaultTheme }>` && {
   font-size: 18px;
   margin-bottom: 10px;
   line-height: 1;
@@ -76,7 +75,7 @@ export const MusicCardTitle = styled.p<{ theme: Theme }>` && {
   color: ${({ theme }) => theme.colors.movieCard.text};
 }`;
 
-export const AuthorTitle = styled.p<{ theme: Theme }>` && {
+export const AuthorTitle = styled.p<{ theme: DefaultTheme }>` && {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -89,7 +88,7 @@ export const AuthorTitle = styled.p<{ theme: Theme }>` && {
   text-align: center;
 }`;
 
-export const SongDuration = styled.p<{ theme: Theme }>` && {
+export const SongDuration = styled.p<{ theme: DefaultTheme }>` && {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -102,7 +101,7 @@ export const SongDuration = styled.p<{ theme: Theme }>` && {
   text-align: center;
 }`;
 
-export const GenreTitle = styled.p<{ theme: Theme }>` && {
+export const GenreTitle = styled.p<{ theme: DefaultTheme }>` && {
   display: flex;
   flex-direction: row;
   justify-content: center;

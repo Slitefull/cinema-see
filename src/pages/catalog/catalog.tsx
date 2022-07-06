@@ -1,36 +1,34 @@
 import React, { FC } from "react";
-import { useQuery } from '@apollo/client';
 import { MusicCard } from "@/components/music-card/music-card.component";
-import { songsQuery } from "@/queries/catalog/catalog";
 import CardsSkeleton from "@/ui-kit/components/sceletons/cards";
 import PageWrapper from "@/components/page-wrapper/page-wrapper";
+import { useMoviesQuery } from "@/hooks/getMoviesQuery";
 
 import { CatalogWrapper } from "./styles";
-import { ISongsQueryResponseModel } from "@/queries/catalog/types";
 
 
 const CatalogPage: FC = (): JSX.Element => {
-  const { data, loading, error } = useQuery<ISongsQueryResponseModel>(songsQuery);
+  const { data, loading, error } = useMoviesQuery();
 
   if (error) return <pre>{error.message}</pre>
   if (loading) return <CardsSkeleton/>;
 
-  const { songs } = data!;
+  const { movies } = data!;
 
   return (
     <PageWrapper>
       <CatalogWrapper>
-        {songs.map((song) => (
+        {movies.map((movie) => (
           <MusicCard
-            id={song.id}
-            key={song.id}
-            album={song.album}
-            thumbnail={song.thumbnail}
-            author={song.author}
-            name={song.name}
-            year={song.year}
-            duration={song.duration}
-            genre={song.genre}
+            id={movie.id}
+            key={movie.id}
+            album={movie.album}
+            thumbnail={movie.thumbnail}
+            author={movie.author}
+            name={movie.name}
+            year={movie.year}
+            duration={movie.duration}
+            genre={movie.genre}
           />
         ))}
       </CatalogWrapper>

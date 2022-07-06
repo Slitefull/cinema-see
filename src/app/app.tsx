@@ -71,7 +71,10 @@ const App: FC = (): JSX.Element => {
                 : <Navigate to={LOGIN_ROUTE}
                 />
               }/>
-            <Route path="*" element={<LazyNotFoundRouter/>}/>
+            <Route
+              path="*"
+              element={<LazyNotFoundRouter/>}
+            />
           </Routes>
         </BrowserRouter>
       </ThemeProvider>

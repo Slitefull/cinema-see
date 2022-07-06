@@ -1,11 +1,12 @@
 import React, { FC } from 'react';
-import { NotFoundContainer } from "@/pages/404/styled";
+import { NotFoundContainer, NotFoundSubtext, NotFoundText } from "./styled";
 
 
 const NotFound: FC = (): JSX.Element => {
   return (
     <NotFoundContainer>
-      404 page not found
+      <NotFoundText>404</NotFoundText>
+      <NotFoundSubtext>Oops! Something wrong…</NotFoundSubtext>
     </NotFoundContainer>
   );
 };

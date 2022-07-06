@@ -1,9 +1,8 @@
 import React, { FC } from "react";
 import PageWrapper from "../../components/page-wrapper/page-wrapper";
 import { useParams } from "react-router-dom";
-import { useQuery } from "@apollo/client";
 import MicrophoneIcon from "../../ui-kit/icons/microphone/microphone";
-import { songByIdQuery } from "../../queries/catalog/catalog";
+import { useMovieByIdQuery } from "@/hooks/getMovieByIdQuery";
 
 import {
   Lyrics,
@@ -14,60 +13,45 @@ import {
   SongHeader,
   SongInfo,
   SongThumbnail,
-  SongTitle, ThumbnailWrapper
+  SongTitle,
+  ThumbnailWrapper
 } from "./styled";
-import { ISongByIdQueryResponseModel } from "@/queries/catalog/types";
 
 
 const SongPage: FC = (): JSX.Element => {
   const { id } = useParams();
-  const songId = id!.replace(":", "");
+  const movieId = id!.replace(":", "");
 
-  const { data, loading, error } = useQuery<ISongByIdQueryResponseModel>(songByIdQuery, {
-    variables: {
-      id: songId
-    }
-  });
+  const { data, loading, error } = useMovieByIdQuery(movieId);
 
   if (error) return <pre>{error.message}</pre>
   if (loading) return <div>Loading...</div>;
 
-  const { song } = data!;
-
-  const songLink = song.videoURL.split('=')[1];
+  const { movie } = data!;
 
   return (
     <PageWrapper>
       <SongHeader>
         <ThumbnailWrapper>
-          <SongAlbum>{song.album}</SongAlbum>
-          <SongThumbnail background={song.thumbnail}/>
+          <SongAlbum>{movie.album}</SongAlbum>
+          <SongThumbnail background={movie.thumbnail}/>
         </ThumbnailWrapper>
         <SongInfo>
           <SongTitle>
-            {song.name}
+            {movie.name}
           </SongTitle>
           <SongAuthor>
-            <MicrophoneIcon color="#FFFFFF"/> {song.author}
+            <MicrophoneIcon color="#FFFFFF"/> {movie.author}
           </SongAuthor>
-          <iframe
-            width="400"
-            height="100%"
-            src={`https://www.youtube.com/embed/${songLink}`}
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen>
-          </iframe>
         </SongInfo>
       </SongHeader>
-      {song.lyrics && (
+      {movie.lyrics && (
         <LyricsWrapper>
           <LyricsDescription>
-            {`${song.name} lyrics`}
+            {`${movie.name} lyrics`}
           </LyricsDescription>
           <Lyrics>
-            {song.lyrics}
+            {movie.lyrics}
           </Lyrics>
         </LyricsWrapper>
       )}

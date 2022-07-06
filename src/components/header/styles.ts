@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import { Theme } from "@/themes/types";
+import styled, { DefaultTheme } from "styled-components";
 
 
 export const HeaderWrapper = styled.div` && {
@@ -11,15 +10,9 @@ export const HeaderWrapper = styled.div` && {
   gap: 0 20px;
 }`;
 
-export const HeaderTitle = styled.p<{ theme: Theme }>` && {
+export const HeaderTitle = styled.p<{ theme: DefaultTheme }>` && {
   font-size: 34px;
   font-weight: bold;
   color: ${({ theme }) => theme.colors.header.text};
   margin: 0;
-}`;
-
-export const HeaderLogo = styled.img` && {
-  height: auto;
-  width: auto;
-  max-width: 75px;
 }`;

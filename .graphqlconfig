@@ -1,0 +1,22 @@
+{
+  "name": "Catalog",
+  "schemaPath": "../schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "movies": {
+        "url": "http://localhost:3005/graphql",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": true
+      },
+      "movie": {
+        "url": "http://localhost:3005/graphql",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": true
+      }
+    }
+  }
+}

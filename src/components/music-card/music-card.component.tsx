@@ -37,7 +37,7 @@ export const MusicCard: FC<IMusicCardProps> = memo((
   const theme = useTheme();
 
   const onClickCardHandler = useCallback(() => {
-    history(`/song:${id}`)
+    history(`/movie:${id}`)
   }, [])
 
   return (

@@ -1,3 +1,7 @@
+interface Body {
+  background: string;
+}
+
 interface Header {
   text: string;
 }
@@ -9,10 +13,16 @@ interface MovieCard {
   border: string;
 }
 
+interface NotFound {
+  text: string;
+  subText: string;
+}
+
 interface Colors {
-  body: string;
+  body: Body;
   header: Header;
   movieCard: MovieCard;
+  notFound: NotFound;
 }
 
 export interface Theme {
