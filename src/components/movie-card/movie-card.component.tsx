@@ -2,9 +2,9 @@ import React, { FC, memo, useCallback } from 'react';
 import { useTheme } from "styled-components";
 import { useNavigate } from "react-router-dom";
 import DateIcon from "@/ui-kit/icons/date/date";
-import MicrophoneIcon from "@/ui-kit/icons/microphone/microphone";
+import UserIcon from "@/ui-kit/icons/user/user";
 import SandClockIcon from "@/ui-kit/icons/sand-clock/sand-clock";
-import PlaylistIcon from "@/ui-kit/icons/playlist/playlist";
+import MovieIcon from "@/ui-kit/icons/movie/movie";
 
 import { IMovieCardProps } from './types/movie-card.types';
 import {
@@ -12,13 +12,15 @@ import {
   AuthorTitle,
   GenreTitle,
   MainInfoWrapper,
-  MovieCardRating,
   MovieCardDate,
+  MovieCardRating,
   MovieCardThumbnail,
   MovieCardTitle,
   MovieCardWrapper,
   MovieDuration
 } from './styled';
+import StarIcon from "@/ui-kit/icons/star/star";
+import { GOLD } from "@/ui-kit/constants/colors";
 
 
 export const MovieCard: FC<IMovieCardProps> = memo((
@@ -43,7 +45,7 @@ export const MovieCard: FC<IMovieCardProps> = memo((
   return (
     <MovieCardWrapper onClick={onClickCardHandler}>
       <MovieCardRating>
-        {rating}
+        <StarIcon color={GOLD}/> {rating}
       </MovieCardRating>
       <MovieCardThumbnail background={thumbnail}/>
       <MainInfoWrapper>
@@ -54,12 +56,12 @@ export const MovieCard: FC<IMovieCardProps> = memo((
           {name}
         </MovieCardTitle>
         <GenreTitle>
-          <PlaylistIcon color={theme.colors.movieCard.icon}/> {genre}
+          <MovieIcon color={theme.colors.movieCard.icon}/> {genre}
         </GenreTitle>
       </MainInfoWrapper>
       <AdditionalInfoWrapper>
         <AuthorTitle>
-          <MicrophoneIcon color={theme.colors.movieCard.icon}/> {director}
+          <UserIcon color={theme.colors.movieCard.icon}/> {director}
         </AuthorTitle>
         <MovieDuration>
           <SandClockIcon color={theme.colors.movieCard.icon}/> {duration}

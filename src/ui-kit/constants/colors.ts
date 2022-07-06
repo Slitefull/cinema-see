@@ -8,3 +8,4 @@ export const DAVY_GREY = "#5E5252";
 export const DARK_LIVER = "#4c4c4c";
 export const FANDANGO_PINK = "#E84E8A";
 export const BYZANTIUM = "#7F265B";
+export const GOLD = "#FFD700";

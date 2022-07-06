@@ -1,6 +1,6 @@
 import styled, { DefaultTheme } from 'styled-components';
 import { IMovieCardThumbnailProps } from "@/components/movie-card/types/styled.types";
-import { FANDANGO_PINK } from "@/ui-kit/constants/colors";
+import { FANDANGO_PINK, WHITE } from "@/ui-kit/constants/colors";
 
 
 export const MovieCardWrapper = styled.div<{ theme: DefaultTheme }>` && {
@@ -23,7 +23,7 @@ export const MovieCardWrapper = styled.div<{ theme: DefaultTheme }>` && {
 
 export const MovieCardRating = styled.span` && {
   font-size: 12px;
-  color: #fff;
+  color: ${WHITE};
   padding: 4px 25px;
   border-radius: 25px;
   font-weight: 600;
@@ -36,6 +36,10 @@ export const MovieCardRating = styled.span` && {
   margin-right: auto;
   width: fit-content;
   transform: translateY(-12px);
+  display: flex;
+  flex-direction: row;
+  gap: 0 10px;
+  align-items: center;
 }`
 
 export const MainInfoWrapper = styled.div<{ theme: DefaultTheme }>` && {

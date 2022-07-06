@@ -1,5 +1,4 @@
 export interface ISandClockIconProps {
-  height?: number;
-  width?: number;
+  size?: number;
   color?: string;
 }
