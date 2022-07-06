@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { IMovieThumbnailProps } from "@/pages/movie/types/styled";
+import { FANDANGO_PINK, WHITE } from "@/ui-kit/constants/colors";
 
 
 export const MovieThumbnail = styled.div<IMovieThumbnailProps>` && {
@@ -19,13 +20,13 @@ export const MovieHeader = styled.div` && {
 
 export const MovieDirector = styled.span` && {
   font-size: 12px;
-  color: #fff;
+  color: ${WHITE};
   padding: 4px 25px;
   border-radius: 25px;
   font-weight: 600;
   letter-spacing: 0.5px;
   position: absolute;
-  background: #E84E8A;
+  background: ${FANDANGO_PINK};
   left: 0;
   right: 0;
   margin-left: auto;
@@ -42,7 +43,7 @@ export const MovieInfo = styled.div` && {
 
 export const MovieTitle = styled.p` && {
   font-size: 28px;
-  color: #FFFFFF;
+  color: ${WHITE};
   margin: 0;
   font-weight: 700;
 }`;

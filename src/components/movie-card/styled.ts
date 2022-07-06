@@ -1,5 +1,6 @@
 import styled, { DefaultTheme } from 'styled-components';
 import { IMovieCardThumbnailProps } from "@/components/movie-card/types/styled.types";
+import { FANDANGO_PINK } from "@/ui-kit/constants/colors";
 
 
 export const MovieCardWrapper = styled.div<{ theme: DefaultTheme }>` && {
@@ -28,7 +29,7 @@ export const MovieCardRating = styled.span` && {
   font-weight: 600;
   letter-spacing: 0.5px;
   position: absolute;
-  background: #E84E8A;
+  background: ${FANDANGO_PINK};
   left: 0;
   right: 0;
   margin-left: auto;

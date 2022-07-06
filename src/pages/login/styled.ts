@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { LeftSideStyledProps } from "@/pages/login/types/styled";
+import { DAVY_GREY, WHITE } from "@/ui-kit/constants/colors";
 
 
 export const LoginForm = styled.form` && {
@@ -15,7 +16,7 @@ export const LeftSide = styled.div<LeftSideStyledProps>` && {
 
 export const FormWrapper = styled.div` && {
   display: flex;
-  background: #FFFFFF;
+  background: ${WHITE};
 }`
 
 export const Container = styled.div` && {
@@ -29,13 +30,13 @@ export const Container = styled.div` && {
 export const LoginText = styled.p` && {
   font-weight: 700;
   font-size: 36px;
-  color: #525252;
+  color: ${DAVY_GREY};
 }`
 
 export const LoginSubtext = styled.p` && {
   font-weight: 400;
   font-size: 16px;
-  color: #525252;
+  color: ${DAVY_GREY};
   margin: 0 0 30px;
 }`
 

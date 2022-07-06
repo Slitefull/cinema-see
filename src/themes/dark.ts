@@ -1,25 +1,26 @@
 import { Theme } from "@/themes/types";
 import { Themes } from "@/constants/themes";
+import { BLACK, BRIGHT_NAVY_BLUE, CHARCOAL, WHITE, WHITE_SMOKE } from "@/ui-kit/constants/colors";
 
 
 const body = {
-  background: '#3c4359',
+  background: CHARCOAL,
 }
 
 const header = {
-  text: '#FFFFFF',
+  text: WHITE,
 }
 
 const movieCard = {
-  body: "#FFFFFF",
-  text: "#000000",
-  icon: "#000000",
-  border: '#F4F4F4',
+  body: WHITE,
+  text: BLACK,
+  icon: BLACK,
+  border: WHITE_SMOKE,
 }
 
 const notFound = {
-  text: '#0765E3',
-  subText: '#FFFFFF',
+  text: BRIGHT_NAVY_BLUE,
+  subText: WHITE,
 }
 
 const colors = {

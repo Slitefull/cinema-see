@@ -1,25 +1,26 @@
 import { Theme } from "@/themes/types";
 import { Themes } from "@/constants/themes";
+import { BISQUE, CHARCOAL, DARK_LIVER, DAVY_GREY, WHITE } from "@/ui-kit/constants/colors";
 
 
 const body = {
-  background: '#FFE6C9',
+  background: BISQUE,
 }
 
 const header = {
-  text: '#5e5252',
+  text: DAVY_GREY,
 }
 
 const movieCard = {
-  body: "#3c4359",
-  text: "#FFFFFF",
-  icon: "#FFFFFF",
-  border: '#4c4c4c63',
+  body: CHARCOAL,
+  text: WHITE,
+  icon: WHITE,
+  border: DARK_LIVER,
 }
 
 const notFound = {
-  text: '#5e5252',
-  subText: '#5e5252',
+  text: DAVY_GREY,
+  subText: DAVY_GREY,
 }
 
 const colors = {
