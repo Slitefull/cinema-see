@@ -4,11 +4,12 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import { email, password } from '@/ui-kit/helpers/validators';
 import { FormsTextInput } from '@/ui-kit/components/forms/text-input/forms-text-input';
-import { LoginForm } from "@/pages/login/styled";
+import { Container, FormWrapper, LeftSide, LoginForm, LoginSubtext, LoginText } from "@/pages/login/styled";
 import { LS_AUTH_KEY } from "@/constants/localStorage";
 import { useNavigate } from "react-router-dom";
 import { ROOT_ROUTE } from "@/constants/routes";
 import CustomButton from "@/ui-kit/components/buttons/custom-button/custom-button";
+import skeleton from "@/ui-kit/images/skeleton.png";
 
 import { LoginProps } from "@/pages/login/types/login";
 
@@ -48,24 +49,31 @@ const Login: FC<LoginProps> = ({ setIsAuth }): JSX.Element => {
 
   return (
     <LoginForm onSubmit={handleSubmit(onSubmitHandler)}>
-      <FormsTextInput
-        name="email"
-        control={control}
-        placeholder={"email"}
-        error={errors.email?.message}
-      />
-      <FormsTextInput
-        name="password"
-        control={control}
-        placeholder={"password"}
-        error={errors.password?.message}
-      />
-      <CustomButton
-        type="submit"
-        disabled={isSubmitting}
-      >
-        Login
-      </CustomButton>
+      <LeftSide background={skeleton}/>
+      <FormWrapper>
+        <Container>
+          <LoginText>Login to your account</LoginText>
+          <LoginSubtext>See what is going on with your business</LoginSubtext>
+          <FormsTextInput
+            name="email"
+            control={control}
+            placeholder={"email"}
+            error={errors.email?.message}
+          />
+          <FormsTextInput
+            name="password"
+            control={control}
+            placeholder={"password"}
+            error={errors.password?.message}
+          />
+          <CustomButton
+            type="submit"
+            disabled={isSubmitting}
+          >
+            Login
+          </CustomButton>
+        </Container>
+      </FormWrapper>
     </LoginForm>
   );
 };

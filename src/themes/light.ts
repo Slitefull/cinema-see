@@ -4,7 +4,7 @@ import { Theme } from "@/themes/types";
 export const light: Theme = {
   name: "light",
   colors: {
-    body: '#F5F5F5',
+    body: '#FFE6C9',
     header: {
       text: '#000000',
     },

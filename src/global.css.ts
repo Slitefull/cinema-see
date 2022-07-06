@@ -7,5 +7,11 @@ export default createGlobalStyle<{ theme: Theme }>` && {
     background-color: ${({ theme }) => theme.colors.body};
     font-family: 'Montserrat', sans-serif;
     transition: 0.3s;
+    padding: 0;
+    margin: 0;
+  }
+  
+  p {
+    margin: 0;
   }
 }`
