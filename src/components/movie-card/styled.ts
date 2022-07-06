@@ -20,7 +20,7 @@ export const MovieCardWrapper = styled.div<{ theme: DefaultTheme }>` && {
   }
 }`;
 
-export const MovieCardAlbum = styled.span` && {
+export const MovieCardRating = styled.span` && {
   font-size: 12px;
   color: #fff;
   padding: 4px 25px;
@@ -41,6 +41,7 @@ export const MainInfoWrapper = styled.div<{ theme: DefaultTheme }>` && {
   display: flex;
   flex-direction: column;
   padding: 15px 0;
+  gap: 15px 0;
   border: 2px solid ${({ theme }) => theme.colors.movieCard.border};
 }`;
 
@@ -62,14 +63,12 @@ export const MovieCardDate = styled.p<{ theme: DefaultTheme }>` && {
   gap: 0 10px;
   font-size: 12px;
   font-weight: 500;
-  margin-bottom: 0;
   color: ${({ theme }) => theme.colors.movieCard.text};
   text-align: center;
 }`;
 
 export const MovieCardTitle = styled.p<{ theme: DefaultTheme }>` && {
   font-size: 18px;
-  margin-bottom: 10px;
   line-height: 1;
   text-align: center;
   color: ${({ theme }) => theme.colors.movieCard.text};

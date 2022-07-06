@@ -12,7 +12,7 @@ import {
   AuthorTitle,
   GenreTitle,
   MainInfoWrapper,
-  MovieCardAlbum,
+  MovieCardRating,
   MovieCardDate,
   MovieCardThumbnail,
   MovieCardTitle,
@@ -24,13 +24,13 @@ import {
 export const MovieCard: FC<IMovieCardProps> = memo((
   {
     id,
-    album,
-    thumbnail,
-    author,
     name,
+    director,
     year,
     duration,
     genre,
+    thumbnail,
+    rating,
   }
 ): JSX.Element => {
   const history = useNavigate();
@@ -42,9 +42,9 @@ export const MovieCard: FC<IMovieCardProps> = memo((
 
   return (
     <MovieCardWrapper onClick={onClickCardHandler}>
-      <MovieCardAlbum>
-        {album}
-      </MovieCardAlbum>
+      <MovieCardRating>
+        {rating}
+      </MovieCardRating>
       <MovieCardThumbnail background={thumbnail}/>
       <MainInfoWrapper>
         <MovieCardDate>
@@ -59,7 +59,7 @@ export const MovieCard: FC<IMovieCardProps> = memo((
       </MainInfoWrapper>
       <AdditionalInfoWrapper>
         <AuthorTitle>
-          <MicrophoneIcon color={theme.colors.movieCard.icon}/> {author}
+          <MicrophoneIcon color={theme.colors.movieCard.icon}/> {director}
         </AuthorTitle>
         <MovieDuration>
           <SandClockIcon color={theme.colors.movieCard.icon}/> {duration}

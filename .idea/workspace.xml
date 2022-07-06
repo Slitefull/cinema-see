@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2412fb80-1040-422d-95c9-c306c7ef84fd" name="Changes" comment="feat: added 404 page">
-      <change afterPath="$PROJECT_DIR$/src/components/movie-card/types/styled.types.ts" afterDir="false" />
+    <list default="true" id="2412fb80-1040-422d-95c9-c306c7ef84fd" name="Changes" comment="feat: added movie card">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/music-card/music-card.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-card/movie-card.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/music-card/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-card/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/music-card/types/music-card.types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-card/types/movie-card.types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/music-card/types/styled.types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movie-card/movie-card.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-card/movie-card.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movie-card/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-card/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movie-card/types/movie-card.types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-card/types/movie-card.types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/catalog/catalog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/catalog/catalog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/catalog/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/catalog/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/movie/movie.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/movie/movie.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/movie/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/movie/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/movie/types/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/movie/types/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/queries/catalog/catalog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/queries/catalog/catalog.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +80,7 @@
       <workItem from="1656958045128" duration="12396000" />
       <workItem from="1656971377153" duration="8901000" />
       <workItem from="1657052585825" duration="14186000" />
-      <workItem from="1657125421754" duration="12213000" />
+      <workItem from="1657125421754" duration="14622000" />
     </task>
     <task id="LOCAL-00001" summary="ref: files">
       <created>1656958205784</created>
@@ -157,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657136695286</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat: added movie card">
+      <created>1657137992905</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1657137992905</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,7 +192,8 @@
     <MESSAGE value="feat: added themes context + 404 page template" />
     <MESSAGE value="feat: added login page" />
     <MESSAGE value="feat: added 404 page" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added 404 page" />
+    <MESSAGE value="feat: added movie card" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added movie card" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

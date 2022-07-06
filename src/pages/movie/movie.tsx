@@ -1,25 +1,13 @@
 import React, { FC } from "react";
 import PageWrapper from "../../components/page-wrapper/page-wrapper";
 import { useParams } from "react-router-dom";
-import MicrophoneIcon from "../../ui-kit/icons/microphone/microphone";
 import CardsSkeleton from "@/ui-kit/components/sceletons/cards";
 import { useMovieByIdQuery } from "@/hooks/getMovieByIdQuery";
 
-import {
-  Lyrics,
-  LyricsDescription,
-  LyricsWrapper,
-  SongAlbum,
-  SongAuthor,
-  SongHeader,
-  SongInfo,
-  SongThumbnail,
-  SongTitle,
-  ThumbnailWrapper
-} from "./styled";
+import { MovieDirector, MovieHeader, MovieInfo, MovieThumbnail, MovieTitle, } from "./styled";
 
 
-const SongPage: FC = (): JSX.Element => {
+const MoviePage: FC = (): JSX.Element => {
   const { id } = useParams();
   const movieId = id!.replace(":", "");
 
@@ -32,32 +20,17 @@ const SongPage: FC = (): JSX.Element => {
 
   return (
     <PageWrapper>
-      <SongHeader>
-        <ThumbnailWrapper>
-          <SongAlbum>{movie.album}</SongAlbum>
-          <SongThumbnail background={movie.thumbnail}/>
-        </ThumbnailWrapper>
-        <SongInfo>
-          <SongTitle>
+      <MovieHeader>
+        <MovieDirector>{movie.director}</MovieDirector>
+        <MovieThumbnail background={movie.thumbnail}/>
+        <MovieInfo>
+          <MovieTitle>
             {movie.name}
-          </SongTitle>
-          <SongAuthor>
-            <MicrophoneIcon color="#FFFFFF"/> {movie.author}
-          </SongAuthor>
-        </SongInfo>
-      </SongHeader>
-      {movie.lyrics && (
-        <LyricsWrapper>
-          <LyricsDescription>
-            {`${movie.name} lyrics`}
-          </LyricsDescription>
-          <Lyrics>
-            {movie.lyrics}
-          </Lyrics>
-        </LyricsWrapper>
-      )}
+          </MovieTitle>
+        </MovieInfo>
+      </MovieHeader>
     </PageWrapper>
   );
 }
 
-export default SongPage;
+export default MoviePage;

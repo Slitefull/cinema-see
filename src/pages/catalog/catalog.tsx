@@ -21,14 +21,13 @@ const CatalogPage: FC = (): JSX.Element => {
         {movies.map((movie) => (
           <MovieCard
             id={movie.id}
-            key={movie.id}
-            album={movie.album}
-            thumbnail={movie.thumbnail}
-            author={movie.author}
+            director={movie.director}
+            genre={movie.genre}
             name={movie.name}
             year={movie.year}
+            thumbnail={movie.thumbnail}
             duration={movie.duration}
-            genre={movie.genre}
+            rating={movie.rating}
           />
         ))}
       </CatalogWrapper>

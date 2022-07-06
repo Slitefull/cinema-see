@@ -1,3 +1,3 @@
-export interface ISongThumbnailProps {
+export interface IMovieThumbnailProps {
   background: string;
 }

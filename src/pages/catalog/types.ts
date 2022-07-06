@@ -1,12 +1,11 @@
 export interface ICatalogElement {
-  id: string;
-  album: string;
-  thumbnail: string;
-  author: string;
+  id: number;
   name: string;
+  director: string;
   year: number;
   duration: string;
   genre: string;
-  videoURL: string;
-  lyrics: string;
+  thumbnail: string;
+  rating: number;
+  actors: string[];
 }

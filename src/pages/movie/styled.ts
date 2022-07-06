@@ -1,12 +1,8 @@
 import styled from "styled-components";
-import { ISongThumbnailProps } from "@/pages/movie/types/styled";
+import { IMovieThumbnailProps } from "@/pages/movie/types/styled";
 
 
-export const ThumbnailWrapper = styled.div` && {
-  position: relative;
-}`;
-
-export const SongThumbnail = styled.div<ISongThumbnailProps>` && {
+export const MovieThumbnail = styled.div<IMovieThumbnailProps>` && {
   width: 300px;
   height: 300px;
   background: ${(props) => `url(${props.background})`};
@@ -15,13 +11,13 @@ export const SongThumbnail = styled.div<ISongThumbnailProps>` && {
   border-radius: 10px;
 }`;
 
-export const SongHeader = styled.div` && {
+export const MovieHeader = styled.div` && {
   display: flex;
   flex-direction: row;
   gap: 0 30px;
 }`;
 
-export const SongAlbum = styled.span` && {
+export const MovieDirector = styled.span` && {
   font-size: 12px;
   color: #fff;
   padding: 4px 25px;
@@ -38,45 +34,15 @@ export const SongAlbum = styled.span` && {
   transform: translateY(-12px);
 }`
 
-export const SongInfo = styled.div` && {
+export const MovieInfo = styled.div` && {
   display: flex;
   flex-direction: column;
   gap: 15px 0;
 }`;
 
-export const SongTitle = styled.p` && {
+export const MovieTitle = styled.p` && {
   font-size: 28px;
   color: #FFFFFF;
   margin: 0;
   font-weight: 700;
-}`;
-
-export const SongAuthor = styled.p` && {
-  font-size: 16px;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 600;
-}`;
-
-export const LyricsWrapper = styled.div` && {
-  display: flex;
-  flex-direction: column;
-  gap: 15px 0;
-  margin: 15px 0 0 0;
-}`;
-
-export const LyricsDescription = styled.p` && {
-  font-size: 12px;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 600;
-}`;
-
-export const Lyrics = styled.p` && {
-  font-size: 14px;
-  color: #FFFFFF;
-  margin: 0;
-  font-weight: 400;
-  max-width: 300px;
-  line-height: 1.5;
 }`;
