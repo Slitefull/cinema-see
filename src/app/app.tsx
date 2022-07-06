@@ -14,10 +14,11 @@ const LazyLoginRouter = lazy(() => import("@/pages/login/login"));
 const LazyRegisterRouter = lazy(() => import("@/pages/register/register"));
 const LazyCatalogRouter = lazy(() => import("@/pages/catalog/catalog"));
 const LazyMovieRouter = lazy(() => import("@/pages/movie/movie"));
+const LazyNotFoundRouter = lazy(() => import("@/pages/404/404"));
 
 interface ThemePreferenceContextParams {
-  currentTheme: Themes,
-  setCurrentTheme: Dispatch<SetStateAction<Themes>>
+  currentTheme: Themes;
+  setCurrentTheme: Dispatch<SetStateAction<Themes>>;
 }
 
 const themesMap = {
@@ -70,11 +71,7 @@ const App: FC = (): JSX.Element => {
                 : <Navigate to={LOGIN_ROUTE}
                 />
               }/>
-            <Route path="*" element={
-              <main>
-                <p>404</p>
-              </main>
-            }/>
+            <Route path="*" element={<LazyNotFoundRouter/>}/>
           </Routes>
         </BrowserRouter>
       </ThemeProvider>
