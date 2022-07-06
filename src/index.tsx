@@ -5,8 +5,6 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 import PlanetLoader from "@/ui-kit/components/loaders/planet";
 import App from './app/app';
 
-import GlobalCSS from './global.css';
-
 
 const client = new ApolloClient({
   uri: "http://localhost:3005/graphql/",
@@ -21,7 +19,6 @@ root.render(
   <React.StrictMode>
     <Suspense fallback={<PlanetLoader/>}>
       <ApolloProvider client={client}>
-        <GlobalCSS/>
         <App/>
       </ApolloProvider>
     </Suspense>

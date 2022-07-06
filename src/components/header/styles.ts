@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Theme } from "@/themes/types";
 
 
 export const HeaderWrapper = styled.div` && {
@@ -8,13 +9,12 @@ export const HeaderWrapper = styled.div` && {
   align-items: center;
   justify-content: center;
   gap: 0 20px;
-  border-bottom: 2px solid rgba(255,255,255,0.25);
 }`;
 
-export const HeaderTitle = styled.p` && {
+export const HeaderTitle = styled.p<{ theme: Theme }>` && {
   font-size: 34px;
   font-weight: bold;
-  color: #FFFFFF;
+  color: ${({ theme }) => theme.colors.header.text};
   margin: 0;
 }`;
 

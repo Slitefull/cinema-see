@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { IDateIconProps } from "@/ui-kit/icons/date/types";
 
 
-const DateIcon: FC<IDateIconProps> = ({ height, width }): JSX.Element => {
+const DateIcon: FC<IDateIconProps> = ({ height, width, color }): JSX.Element => {
   return (
     <svg
       version="1.1"
@@ -10,6 +10,7 @@ const DateIcon: FC<IDateIconProps> = ({ height, width }): JSX.Element => {
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
+      fill={color}
       width={height || 15}
       height={width || 15}
       viewBox="0 0 511.634 511.634"

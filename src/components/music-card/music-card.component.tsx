@@ -4,7 +4,9 @@ import DateIcon from "@/ui-kit/icons/date/date";
 import MicrophoneIcon from "@/ui-kit/icons/microphone/microphone";
 import SandClockIcon from "@/ui-kit/icons/sand-clock/sand-clock";
 import PlaylistIcon from "@/ui-kit/icons/playlist/playlist";
+import { useTheme } from "styled-components";
 
+import { IMusicCardProps } from './types/music-card.types';
 import {
   AdditionalInfoWrapper,
   AuthorTitle,
@@ -17,7 +19,6 @@ import {
   MusicCardWrapper,
   SongDuration
 } from './styled';
-import { IMusicCardProps } from './types/music-card.types';
 
 
 export const MusicCard: FC<IMusicCardProps> = memo((
@@ -33,6 +34,7 @@ export const MusicCard: FC<IMusicCardProps> = memo((
   }
 ): JSX.Element => {
   const history = useNavigate();
+  const theme = useTheme();
 
   const onClickCardHandler = useCallback(() => {
     history(`/song:${id}`)
@@ -46,21 +48,21 @@ export const MusicCard: FC<IMusicCardProps> = memo((
       <MusicCardThumbnail background={thumbnail}/>
       <MainInfoWrapper>
         <MusicCardDate>
-          <DateIcon/> {year}
+          <DateIcon color={theme.colors.movieCard.icon}/> {year}
         </MusicCardDate>
         <MusicCardTitle>
           {name}
         </MusicCardTitle>
         <GenreTitle>
-          <PlaylistIcon/> {genre}
+          <PlaylistIcon color={theme.colors.movieCard.icon}/> {genre}
         </GenreTitle>
       </MainInfoWrapper>
       <AdditionalInfoWrapper>
         <AuthorTitle>
-          <MicrophoneIcon/> {author}
+          <MicrophoneIcon color={theme.colors.movieCard.icon}/> {author}
         </AuthorTitle>
         <SongDuration>
-          <SandClockIcon/> {duration}
+          <SandClockIcon color={theme.colors.movieCard.icon}/> {duration}
         </SongDuration>
       </AdditionalInfoWrapper>
     </MusicCardWrapper>

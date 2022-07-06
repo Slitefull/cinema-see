@@ -2,13 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2412fb80-1040-422d-95c9-c306c7ef84fd" name="Changes" comment="feat: auth logic">
-      <change afterPath="$PROJECT_DIR$/src/pages/404/404.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/404/styled.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/login/types/login.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/themes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styled.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/themes/dark.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/themes/light.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/themes/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui-kit/helpers/validators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui-kit/helpers/validators.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/music-card/music-card.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/music-card/music-card.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/music-card/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/music-card/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-kit/icons/date/date.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui-kit/icons/date/date.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-kit/icons/date/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui-kit/icons/date/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-kit/icons/playlist/playlist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui-kit/icons/playlist/playlist.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-kit/icons/playlist/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui-kit/icons/playlist/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-kit/icons/sand-clock/sand-clock.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui-kit/icons/sand-clock/sand-clock.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui-kit/icons/sand-clock/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui-kit/icons/sand-clock/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +78,7 @@
       <workItem from="1656950682710" duration="32000" />
       <workItem from="1656958045128" duration="12396000" />
       <workItem from="1656971377153" duration="8901000" />
-      <workItem from="1657052585825" duration="4735000" />
+      <workItem from="1657052585825" duration="13142000" />
     </task>
     <task id="LOCAL-00001" summary="ref: files">
       <created>1656958205784</created>
@@ -110,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656980356521</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: auth logic">
+      <created>1657057380088</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1657057380088</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +152,18 @@
     <MESSAGE value="feat: added new components" />
     <MESSAGE value="feat: auth logic" />
     <option name="LAST_COMMIT_MESSAGE" value="feat: auth logic" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/app.tsx</url>
+          <line>6</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

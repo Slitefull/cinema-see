@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 import { IMusicCardThumbnailProps } from "@/components/music-card/types/styled.types";
+import { Theme } from "@/themes/types";
 
 
-export const MusicCardWrapper = styled.div` && {
+export const MusicCardWrapper = styled.div<{ theme: Theme }>` && {
   width: auto;
   height: auto;
   min-width: 280px;
   max-height: 500px;
   border-radius: 10px;
-  background: #FFFFFF;
+  background: ${({ theme }) => theme.colors.movieCard.body};
   transition: 0.2s;
   position: relative;
   cursor: pointer;
@@ -37,11 +38,11 @@ export const MusicCardAlbum = styled.span` && {
   transform: translateY(-12px);
 }`
 
-export const MainInfoWrapper = styled.div` && {
+export const MainInfoWrapper = styled.div<{ theme: Theme }>` && {
   display: flex;
   flex-direction: column;
   padding: 15px 0;
-  border: 2px solid #F4F4F4;
+  border: 2px solid ${({ theme }) => theme.colors.movieCard.border};
 }`;
 
 export const AdditionalInfoWrapper = styled.div` && {
@@ -54,7 +55,7 @@ export const AdditionalInfoWrapper = styled.div` && {
   justify-content: space-between;
 }`;
 
-export const MusicCardDate = styled.p` && {
+export const MusicCardDate = styled.p<{ theme: Theme }>` && {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -63,19 +64,19 @@ export const MusicCardDate = styled.p` && {
   font-size: 12px;
   font-weight: 500;
   margin-bottom: 0;
-  color: #000;
+  color: ${({ theme }) => theme.colors.movieCard.text};
   text-align: center;
 }`;
 
-export const MusicCardTitle = styled.p` && {
+export const MusicCardTitle = styled.p<{ theme: Theme }>` && {
   font-size: 18px;
   margin-bottom: 10px;
   line-height: 1;
   text-align: center;
-  color: #000;
+  color: ${({ theme }) => theme.colors.movieCard.text};
 }`;
 
-export const AuthorTitle = styled.p` && {
+export const AuthorTitle = styled.p<{ theme: Theme }>` && {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -83,12 +84,12 @@ export const AuthorTitle = styled.p` && {
   gap: 0 10px;
   font-size: 12px;
   font-weight: 500;
-  color: #000;
+  color: ${({ theme }) => theme.colors.movieCard.text};
   margin: 0;
   text-align: center;
 }`;
 
-export const SongDuration = styled.p` && {
+export const SongDuration = styled.p<{ theme: Theme }>` && {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -96,12 +97,12 @@ export const SongDuration = styled.p` && {
   gap: 0 10px;
   font-size: 12px;
   font-weight: 500;
-  color: #000;
+  color: ${({ theme }) => theme.colors.movieCard.text};
   margin: 0;
   text-align: center;
 }`;
 
-export const GenreTitle = styled.p` && {
+export const GenreTitle = styled.p<{ theme: Theme }>` && {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -109,7 +110,7 @@ export const GenreTitle = styled.p` && {
   gap: 0 10px;
   font-size: 12px;
   font-weight: 500;
-  color: #000;
+  color: ${({ theme }) => theme.colors.movieCard.text};
   text-align: center;
   margin: 0;
 }`;

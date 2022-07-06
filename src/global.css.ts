@@ -1,9 +1,11 @@
 import { createGlobalStyle } from 'styled-components'
+import { Theme } from "@/themes/types";
 
 
-export default createGlobalStyle` && {
+export default createGlobalStyle<{ theme: Theme }>` && {
   body {
-    background-color: #3c4359;
+    background-color: ${({ theme }) => theme.colors.body};
     font-family: 'Montserrat', sans-serif;
+    transition: 0.3s;
   }
 }`

@@ -2,11 +2,12 @@ import React, { FC } from 'react';
 import { ISandClockIconProps } from "@/ui-kit/icons/sand-clock/types";
 
 
-const SandClockIcon: FC<ISandClockIconProps> = ({ width, height }): JSX.Element => {
+const SandClockIcon: FC<ISandClockIconProps> = ({ width, height, color }): JSX.Element => {
   return (
     <svg
       height={height || 15}
       width={width || 15}
+      fill={color}
       version="1.1"
       id="Icons"
       xmlns="http://www.w3.org/2000/svg"
