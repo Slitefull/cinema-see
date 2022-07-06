@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { MusicCard } from "@/components/music-card/music-card.component";
+import { MovieCard } from "@/components/movie-card/movie-card.component";
 import CardsSkeleton from "@/ui-kit/components/sceletons/cards";
 import PageWrapper from "@/components/page-wrapper/page-wrapper";
 import { useMoviesQuery } from "@/hooks/getMoviesQuery";
@@ -19,7 +19,7 @@ const CatalogPage: FC = (): JSX.Element => {
     <PageWrapper>
       <CatalogWrapper>
         {movies.map((movie) => (
-          <MusicCard
+          <MovieCard
             id={movie.id}
             key={movie.id}
             album={movie.album}

@@ -1,27 +1,27 @@
 import React, { FC, memo, useCallback } from 'react';
+import { useTheme } from "styled-components";
 import { useNavigate } from "react-router-dom";
 import DateIcon from "@/ui-kit/icons/date/date";
 import MicrophoneIcon from "@/ui-kit/icons/microphone/microphone";
 import SandClockIcon from "@/ui-kit/icons/sand-clock/sand-clock";
 import PlaylistIcon from "@/ui-kit/icons/playlist/playlist";
-import { useTheme } from "styled-components";
 
-import { IMusicCardProps } from './types/music-card.types';
+import { IMovieCardProps } from './types/movie-card.types';
 import {
   AdditionalInfoWrapper,
   AuthorTitle,
   GenreTitle,
   MainInfoWrapper,
-  MusicCardAlbum,
-  MusicCardDate,
-  MusicCardThumbnail,
-  MusicCardTitle,
-  MusicCardWrapper,
-  SongDuration
+  MovieCardAlbum,
+  MovieCardDate,
+  MovieCardThumbnail,
+  MovieCardTitle,
+  MovieCardWrapper,
+  MovieDuration
 } from './styled';
 
 
-export const MusicCard: FC<IMusicCardProps> = memo((
+export const MovieCard: FC<IMovieCardProps> = memo((
   {
     id,
     album,
@@ -38,21 +38,21 @@ export const MusicCard: FC<IMusicCardProps> = memo((
 
   const onClickCardHandler = useCallback(() => {
     history(`/movie:${id}`)
-  }, [])
+  }, [history, id])
 
   return (
-    <MusicCardWrapper onClick={onClickCardHandler}>
-      <MusicCardAlbum>
+    <MovieCardWrapper onClick={onClickCardHandler}>
+      <MovieCardAlbum>
         {album}
-      </MusicCardAlbum>
-      <MusicCardThumbnail background={thumbnail}/>
+      </MovieCardAlbum>
+      <MovieCardThumbnail background={thumbnail}/>
       <MainInfoWrapper>
-        <MusicCardDate>
+        <MovieCardDate>
           <DateIcon color={theme.colors.movieCard.icon}/> {year}
-        </MusicCardDate>
-        <MusicCardTitle>
+        </MovieCardDate>
+        <MovieCardTitle>
           {name}
-        </MusicCardTitle>
+        </MovieCardTitle>
         <GenreTitle>
           <PlaylistIcon color={theme.colors.movieCard.icon}/> {genre}
         </GenreTitle>
@@ -61,10 +61,10 @@ export const MusicCard: FC<IMusicCardProps> = memo((
         <AuthorTitle>
           <MicrophoneIcon color={theme.colors.movieCard.icon}/> {author}
         </AuthorTitle>
-        <SongDuration>
+        <MovieDuration>
           <SandClockIcon color={theme.colors.movieCard.icon}/> {duration}
-        </SongDuration>
+        </MovieDuration>
       </AdditionalInfoWrapper>
-    </MusicCardWrapper>
+    </MovieCardWrapper>
   )
 });

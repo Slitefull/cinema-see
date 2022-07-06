@@ -1,4 +1,4 @@
-export interface IMusicCardProps {
+export interface IMovieCardProps {
   id: string;
   album: string;
   thumbnail: string;

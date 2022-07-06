@@ -1,8 +1,8 @@
 import styled, { DefaultTheme } from 'styled-components';
-import { IMusicCardThumbnailProps } from "@/components/music-card/types/styled.types";
+import { IMovieCardThumbnailProps } from "@/components/movie-card/types/styled.types";
 
 
-export const MusicCardWrapper = styled.div<{ theme: DefaultTheme }>` && {
+export const MovieCardWrapper = styled.div<{ theme: DefaultTheme }>` && {
   width: auto;
   height: auto;
   min-width: 280px;
@@ -20,7 +20,7 @@ export const MusicCardWrapper = styled.div<{ theme: DefaultTheme }>` && {
   }
 }`;
 
-export const MusicCardAlbum = styled.span` && {
+export const MovieCardAlbum = styled.span` && {
   font-size: 12px;
   color: #fff;
   padding: 4px 25px;
@@ -54,7 +54,7 @@ export const AdditionalInfoWrapper = styled.div` && {
   justify-content: space-between;
 }`;
 
-export const MusicCardDate = styled.p<{ theme: DefaultTheme }>` && {
+export const MovieCardDate = styled.p<{ theme: DefaultTheme }>` && {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -67,7 +67,7 @@ export const MusicCardDate = styled.p<{ theme: DefaultTheme }>` && {
   text-align: center;
 }`;
 
-export const MusicCardTitle = styled.p<{ theme: DefaultTheme }>` && {
+export const MovieCardTitle = styled.p<{ theme: DefaultTheme }>` && {
   font-size: 18px;
   margin-bottom: 10px;
   line-height: 1;
@@ -88,7 +88,7 @@ export const AuthorTitle = styled.p<{ theme: DefaultTheme }>` && {
   text-align: center;
 }`;
 
-export const SongDuration = styled.p<{ theme: DefaultTheme }>` && {
+export const MovieDuration = styled.p<{ theme: DefaultTheme }>` && {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -114,7 +114,7 @@ export const GenreTitle = styled.p<{ theme: DefaultTheme }>` && {
   margin: 0;
 }`;
 
-export const MusicCardThumbnail = styled.div<IMusicCardThumbnailProps>` && {
+export const MovieCardThumbnail = styled.div<IMovieCardThumbnailProps>` && {
   width: 100%;
   height: 250px;
   background: ${(props) => `url(${props.background})`};

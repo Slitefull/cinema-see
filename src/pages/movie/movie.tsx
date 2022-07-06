@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import PageWrapper from "../../components/page-wrapper/page-wrapper";
 import { useParams } from "react-router-dom";
 import MicrophoneIcon from "../../ui-kit/icons/microphone/microphone";
+import CardsSkeleton from "@/ui-kit/components/sceletons/cards";
 import { useMovieByIdQuery } from "@/hooks/getMovieByIdQuery";
 
 import {
@@ -25,7 +26,7 @@ const SongPage: FC = (): JSX.Element => {
   const { data, loading, error } = useMovieByIdQuery(movieId);
 
   if (error) return <pre>{error.message}</pre>
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <CardsSkeleton/>;
 
   const { movie } = data!;
 
