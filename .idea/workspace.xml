@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2412fb80-1040-422d-95c9-c306c7ef84fd" name="Changes" comment="feat: added movie card">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/catalog/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/catalog/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/movie/movie.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/movie/movie.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/movie/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/movie/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +31,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2BUBF7593T2SaFAOSpcUTQEkAvS" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -44,7 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cource-backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -80,6 +78,7 @@
       <workItem from="1657125421754" duration="19476000" />
       <workItem from="1657195242752" duration="423000" />
       <workItem from="1657227891451" duration="4263000" />
+      <workItem from="1657234321290" duration="727000" />
     </task>
     <task id="LOCAL-00001" summary="ref: files">
       <created>1656958205784</created>
