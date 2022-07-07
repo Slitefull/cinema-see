@@ -34,6 +34,8 @@ const App: FC = (): JSX.Element => {
 
   const theme = themesMap[currentTheme];
 
+  console.log(process.env, 'APP_BACKEND_URL')
+
   useEffect(() => {
     const isAuthLS = getIsAuth();
     setIsAuth(isAuthLS)

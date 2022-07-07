@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2412fb80-1040-422d-95c9-c306c7ef84fd" name="Changes" comment="feat: new gitignore">
-      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+    <list default="true" id="2412fb80-1040-422d-95c9-c306c7ef84fd" name="Changes" comment="feat: new .env">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../llabo-site" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../work/frontend" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -206,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657236761708</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="feat: new .env">
+      <created>1657236938045</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1657236938045</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +248,8 @@
     <MESSAGE value="feat: added movie card" />
     <MESSAGE value="feat: added engines for deploy" />
     <MESSAGE value="feat: new gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: new gitignore" />
+    <MESSAGE value="feat: new .env" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: new .env" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
