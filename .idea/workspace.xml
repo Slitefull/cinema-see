@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2412fb80-1040-422d-95c9-c306c7ef84fd" name="Changes" comment="feat: added engines for deploy">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="2412fb80-1040-422d-95c9-c306c7ef84fd" name="Changes" comment="feat: new gitignore">
+      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +41,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../llabo-site" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -58,6 +58,7 @@
       <recent name="C:\Users\vipti\Desktop\cinema-see\src\ui-kit\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vipti\Desktop\cinema-see" />
       <recent name="C:\Users\vipti\Desktop\cinema-see\src\ui-kit\images" />
       <recent name="C:\Users\vipti\Desktop\cinema-see\src\components" />
     </key>
@@ -198,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657236725272</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feat: new gitignore">
+      <created>1657236761708</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1657236761708</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +236,8 @@
     <MESSAGE value="feat: added ui-kit icons" />
     <MESSAGE value="feat: added movie card" />
     <MESSAGE value="feat: added engines for deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added engines for deploy" />
+    <MESSAGE value="feat: new gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: new gitignore" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
