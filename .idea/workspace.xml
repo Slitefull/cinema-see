@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2412fb80-1040-422d-95c9-c306c7ef84fd" name="Changes" comment="feat: added movie card">
+    <list default="true" id="2412fb80-1040-422d-95c9-c306c7ef84fd" name="Changes" comment="feat: added engines for deploy">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657150613488</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feat: added engines for deploy">
+      <created>1657236725272</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1657236725272</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +227,8 @@
     <MESSAGE value="feat: added ui-kit colors constants" />
     <MESSAGE value="feat: added ui-kit icons" />
     <MESSAGE value="feat: added movie card" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added movie card" />
+    <MESSAGE value="feat: added engines for deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added engines for deploy" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
