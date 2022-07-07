@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2412fb80-1040-422d-95c9-c306c7ef84fd" name="Changes" comment="feat: added ui-kit icons">
+    <list default="true" id="2412fb80-1040-422d-95c9-c306c7ef84fd" name="Changes" comment="feat: added movie card">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/header.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/movie-card/movie-card.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-card/movie-card.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/movie-card/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-card/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui-kit/components/buttons/custom-button/custom-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui-kit/components/buttons/custom-button/custom-button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui-kit/components/buttons/custom-button/types/custom-button.types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui-kit/components/buttons/custom-button/types/custom-button.types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/catalog/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/catalog/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/movie/movie.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/movie/movie.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/movie/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/movie/styled.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ui-kit/icons/star" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cource-backend" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -78,7 +77,9 @@
       <workItem from="1656958045128" duration="12396000" />
       <workItem from="1656971377153" duration="8901000" />
       <workItem from="1657052585825" duration="14186000" />
-      <workItem from="1657125421754" duration="19446000" />
+      <workItem from="1657125421754" duration="19476000" />
+      <workItem from="1657195242752" duration="423000" />
+      <workItem from="1657227891451" duration="4263000" />
     </task>
     <task id="LOCAL-00001" summary="ref: files">
       <created>1656958205784</created>
@@ -185,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657144684340</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat: added movie card">
+      <created>1657150613488</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1657150613488</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,10 +219,10 @@
     <MESSAGE value="feat: added themes context + 404 page template" />
     <MESSAGE value="feat: added login page" />
     <MESSAGE value="feat: added 404 page" />
-    <MESSAGE value="feat: added movie card" />
     <MESSAGE value="feat: added ui-kit colors constants" />
     <MESSAGE value="feat: added ui-kit icons" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added ui-kit icons" />
+    <MESSAGE value="feat: added movie card" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added movie card" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

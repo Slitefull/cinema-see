@@ -4,7 +4,15 @@ import { useParams } from "react-router-dom";
 import CardsSkeleton from "@/ui-kit/components/sceletons/cards";
 import { useMovieByIdQuery } from "@/hooks/getMovieByIdQuery";
 
-import { MovieDirector, MovieHeader, MovieInfo, MovieThumbnail, MovieTitle, } from "./styled";
+import {
+  HeaderContainer,
+  MovieDescription,
+  MovieInfoWrapper,
+  MovieSubtitle,
+  MovieThumbnail,
+  MovieTitle,
+  MovieYear
+} from "@/pages/movie/styled";
 
 
 const MoviePage: FC = (): JSX.Element => {
@@ -20,15 +28,14 @@ const MoviePage: FC = (): JSX.Element => {
 
   return (
     <PageWrapper>
-      <MovieHeader>
-        <MovieDirector>{movie.director}</MovieDirector>
+      <HeaderContainer>
         <MovieThumbnail background={movie.thumbnail}/>
-        <MovieInfo>
-          <MovieTitle>
-            {movie.name}
-          </MovieTitle>
-        </MovieInfo>
-      </MovieHeader>
+        <MovieInfoWrapper>
+          <MovieTitle>{movie.name} <MovieYear>{movie.year}</MovieYear></MovieTitle>
+          <MovieSubtitle>{movie.genre} {movie.duration}</MovieSubtitle>
+          <MovieDescription>{movie.description}</MovieDescription>
+        </MovieInfoWrapper>
+      </HeaderContainer>
     </PageWrapper>
   );
 }

@@ -6,13 +6,9 @@ import CustomButton from "@/ui-kit/components/buttons/custom-button/custom-butto
 import { LS_AUTH_KEY } from "@/constants/localStorage";
 
 import { HeaderTitle, HeaderWrapper } from "./styles";
-import { useNavigate } from "react-router-dom";
-import { LOGIN_ROUTE } from "@/constants/routes";
-
 
 
 const Header: FC = (): JSX.Element => {
-
   const { setCurrentTheme } = useContext(ThemePreferenceContext)!;
   const [isToggled, setIsToggled] = useState(true);
 
@@ -34,7 +30,7 @@ const Header: FC = (): JSX.Element => {
     <HeaderWrapper>
       <HeaderTitle>Movie Catalog</HeaderTitle>
       <CustomSwitcher isToggled={isToggled} onToggle={onToggle}/>
-      <CustomButton onClick={onLogoutHandler}>Logout</CustomButton>
+      {/*<CustomButton onClick={onLogoutHandler}>Logout</CustomButton>*/}
     </HeaderWrapper>
   );
 };
